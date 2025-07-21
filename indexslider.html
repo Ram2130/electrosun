@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>School Carousel</title>
+
+  <!-- Owl Carousel CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+
+  <!-- Bootstrap Icons for Arrows -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+  <!-- Custom CSS -->
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    .carousel-container {
+      position: relative;
+      width: 100%;
+      overflow: hidden;
+    }
+
+    .owl-carousel-item {
+      position: relative;
+    }
+
+    .owl-carousel-item img {
+      width: 100%;
+      height: 90vh;
+      object-fit: cover;
+    }
+
+    .carousel-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.4);
+      display: flex;
+      align-items: center;
+    }
+
+    .carousel-content {
+      color: #fff;
+      max-width: 700px;
+      padding: 20px;
+    }
+
+    .carousel-content h1 {
+      font-size: 3rem;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    .carousel-content p {
+      font-size: 1.2rem;
+      margin-bottom: 30px;
+    }
+
+    .carousel-content .btn {
+      padding: 12px 25px;
+      border-radius: 25px;
+      margin-right: 15px;
+      font-size: 1rem;
+      border: none;
+      cursor: pointer;
+    }
+
+    .btn-primary {
+      background-color: #ff5722;
+      color: white;
+    }
+
+    .btn-dark {
+      background-color: #333;
+      color: white;
+    }
+
+    /* Navigation Arrows */
+    .owl-carousel .owl-nav {
+      position: absolute;
+      top: 45%;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      padding: 0 20px;
+    }
+
+    .owl-carousel .owl-nav i {
+      font-size: 2rem;
+      color: white;
+      background: rgba(0, 0, 0, 0.5);
+      padding: 10px;
+      border-radius: 50%;
+      transition: 0.3s;
+    }
+
+    .owl-carousel .owl-nav i:hover {
+      background: rgba(255, 255, 255, 0.8);
+      color: #000;
+    }
+
+    /* Dots */
+    .owl-carousel .owl-dots {
+      position: absolute;
+      bottom: 15px;
+      width: 100%;
+      text-align: center;
+    }
+
+    .owl-carousel .owl-dot span {
+      width: 12px;
+      height: 12px;
+      background: #fff;
+      display: inline-block;
+      margin: 5px;
+      border-radius: 50%;
+      opacity: 0.5;
+    }
+
+    .owl-carousel .owl-dot.active span {
+      opacity: 1;
+    }
+
+    @media (max-width: 768px) {
+      .carousel-content h1 {
+        font-size: 2rem;
+      }
+
+      .carousel-content p {
+        font-size: 1rem;
+      }
+
+      .carousel-content {
+        padding: 10px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="carousel-container">
+    
+    <div class="owl-carousel header-carousel">
+      <!-- Slide 1 -->
+       
+      <div class="owl-carousel-item">
+        <img src="https://thumbs.dreamstime.com/b/concept-solar-panel-green-energy-14098504.jpg" alt="Slide 1" />
+        <div class="carousel-overlay">
+          <div class="carousel-content">
+            <h1>Explore the Power of Planets – A Universe Full of Wonders</h1>
+            <p> Just like the Sun powers the entire solar system, each planet has its own special role
+								and
+								beauty.
+</p>
+            <button class="btn btn-primary"><a href="about.html" class="btn-default" style="color: #fff;text-underline-offset: unset;">Learn More</a></button>
+             
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="owl-carousel-item">
+        <img src="https://media.gettyimages.com/id/1405880267/photo/two-engineers-installing-solar-panels-on-roof.jpg?s=170667a&w=gi&k=20&c=cqNe4gN9WWumbat_f1KBpeW5PxOJP5M0SdsvTaoym1Y=" alt="Slide 2" />
+        <div class="carousel-overlay">
+          <div class="carousel-content">
+            <h1>Explore the Power of Solar – A Future Fueled by the Sun</h1>
+<p>Just like the sun powers life on Earth, solar energy systems empower your home and business with clean, sustainable power. Every solar solution plays a vital role in building a greener future.</p>
+
+            <button class="btn btn-primary">Learn More</button>
+            
+          </div>
+        </div>
+      </div>
+
+       <div class="owl-carousel-item">
+        <img src="https://img.energytech.com/files/base/ebm/energytech/image/2022/02/solarpanels_v2.61d59e03229fd.61dcb39af114f.61fd35020cc21.png?auto=format,compress&fit=fill&fill=blur&q=45&w=640&width=640" alt="Slide 2" />
+        <div class="carousel-overlay">
+          <div class="carousel-content">
+            <h1>Explore the Power of Solar – A Future Fueled by the Sun</h1>
+<p>Just like the sun powers life on Earth, solar energy systems empower your home and business with clean, sustainable power. Every solar solution plays a vital role in building a greener future.</p>
+
+            <button class="btn btn-primary">Learn More</button>
+            
+          </div>
+        </div>
+      </div>
+      <!-- Add more slides here -->
+    </div>
+  </div>
+
+  <!-- Owl Carousel JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+  <script>
+    $(document).ready(function () {
+      $(".header-carousel").owlCarousel({
+        items: 1,
+        loop: true,
+        autoplay: true,
+        autoplayTimeout: 4000,
+        smartSpeed: 1000,
+        nav: true,
+        dots: true,
+        navText: [
+          '<i class="bi bi-chevron-left"></i>',
+          '<i class="bi bi-chevron-right"></i>'
+        ]
+      });
+    });
+  </script>
+</body>
+
+</html>

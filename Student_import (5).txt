@@ -1,0 +1,2 @@
+﻿first_name,last_name,mobile,gender,dob,admission_date,current_address,permanent_address,guardian_email,guardian_first_name,guardian_last_name,guardian_gender,guardian_mobile
+student1,example,1234567899,male,20-07-2025,20-07-2025,current address,permanent address,guaridan@example.com,guardian,fdgdfg,male,123456789
